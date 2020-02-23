@@ -2,18 +2,24 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-family: "Roboto";
-  background-color: #fff;
+  background-color: lightgray;
   font-size: 14px;
   font-weight: 500;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  max-width: 974px;
-  margin: 0 auto;
-  padding: 30px;
-  background: gray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 form {
@@ -26,8 +32,9 @@ form {
 }
 
 .form {
-  max-width: 337px;
+  width: 337px;
   background: #fafafa;
+  display: block;
 }
 
 .form__container {
@@ -63,7 +70,7 @@ form {
 }
 
 .form__title::after {
-  content: url("../key-icon.png");
+  content: url("key-icon.png");
   position: relative;
   left: -192px;
   top: 7px;
@@ -84,11 +91,11 @@ form {
 }
 
 .form__field--email {
-  background: url("../email-icon.png") no-repeat 99% 50%;
+  background: url("email-icon.png") no-repeat 99% 50%;
 }
 
 .form__field--password {
-  background: url("../lock-icon.png") no-repeat 100% 50%;
+  background: url("lock-icon.png") no-repeat 100% 50%;
 }
 
 .form__field:focus {
@@ -113,11 +120,14 @@ form {
 
 .form__link {
   text-decoration: none;
-  color: #757575;
 }
 
 .form__link--registration {
   color: #212121;
+}
+
+.form__link--recovery {
+  color: #757575;
 }
 
 /*# sourceMappingURL=form.css.map */

@@ -1,28 +1,33 @@
-* 
+*
   box-sizing: border-box
 
-body 
-  font-family: 'Roboto'
-  background-color: #fff
-  font-size: 14px
-  font-weight: 500
+html, body
+    font-family: 'Roboto'
+    background-color: lightgray
+    font-size: 14px
+    font-weight: 500
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
 
-.container 
-  max-width: 974px
-  margin: 0 auto
-  padding: 30px
-  background: gray
-
-form 
+.container
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    height: 100%
+form
     margin: 0
     padding: 0
    
 .la 
      border-radius: 20px
 .form 
-    max-width: 337px
+    width: 337px
     background: #fafafa
-    
+    display: block
 
     &__container
         padding: 10px 22px 10px 22px
@@ -48,7 +53,7 @@ form
         margin: 0px
         padding-left: 39px
         &::after
-            content: url('../key-icon.png')
+            content: url('key-icon.png')
             position: relative
             left: -192px
             top: 7px
@@ -67,9 +72,9 @@ form
         border-radius: 5px
 
         &--email
-            background: url('../email-icon.png') no-repeat 99% 50%
+            background: url('email-icon.png') no-repeat 99% 50%
         &--password
-            background: url('../lock-icon.png') no-repeat 100% 50%
+            background: url('lock-icon.png') no-repeat 100% 50%
 
         &:focus
             opacity: 1
@@ -93,4 +98,4 @@ form
         &--registration
             color: #212121
         &--recovery
-        color: #757575
+            color: #757575
